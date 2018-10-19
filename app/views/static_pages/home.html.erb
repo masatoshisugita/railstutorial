@@ -1,17 +1,15 @@
-<h1>Sample App</h1>
-<p>
-  This is the home page for the
-  <a href="https://railstutorial.jp/">Ruby on Rails Tutorial</a>
-  sample application.
-</p>
+<div class="center jumbotron">
+  <h1>Welcome to the Sample App</h1>
 
-<div class="a">
-  <p>こんちゃっす</p>
+  <h2>
+    This is the home page for the
+    <a href="https://railstutorial.jp/">Ruby on Rails Tutorial</a>
+    sample application.
+  </h2>
+
+  <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
 </div>
 
-<script>
-$(function(){
-
-  $(".a").css("display","none").fadeIn();
-});
-</script>
+<%= link_to image_tag("rails.png", alt: "Rails logo"),
+            'http://rubyonrails.org/' %>
+<%#= link_to image_tag("kitten.jpg",alt: "cat log"),'#' %>
