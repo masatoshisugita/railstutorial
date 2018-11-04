@@ -16,4 +16,18 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
     get  signup_path
     assert_select "title", full_title("Sign up")
   end
+
+  def setup
+    @user = users(:michael)
+  end
+
+  test "layouts linls when logged in" do
+    log_in_as(@user)
+    get root_path
+    assert_template 'static_pages/home'
+    assert_select "a[href=?]", users_path #users/index
+    assert_select "a[href=?]", user_path(@user) #users_show
+    assert_select "a[href=?]", edit_user_path(@user)     #users/edit
+    assert_select "a[href=?]", logout_path #users/logout
+  end
 end
