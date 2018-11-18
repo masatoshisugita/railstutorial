@@ -60,6 +60,11 @@ group :test do
     gem 'guard-minitest',           '2.4.4'
 end
 
+group :production do
+  gem 'pg'
+  gem 'fog'
+  end
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
@@ -73,3 +78,7 @@ gem 'faker',          '1.7.3'
 
 gem 'will_paginate',           '3.1.6'
 gem 'bootstrap-will_paginate', '1.0.0'
+
+gem 'carrierwave'
+
+gem 'mini_magick'

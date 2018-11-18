@@ -1,0 +1,21 @@
+current directory: /Users/sugitamasatoshi/sample_app/vendor/bundle/ruby/2.4.0/gems/puma-3.12.0/ext/puma_http11
+/Users/sugitamasatoshi/.rbenv/versions/2.4.1/bin/ruby -r ./siteconf20181118-10048-r2g78z.rb extconf.rb
+checking for BIO_read() in -lcrypto... yes
+checking for SSL_CTX_new() in -lssl... yes
+checking for openssl/bio.h... yes
+creating Makefile
+
+current directory: /Users/sugitamasatoshi/sample_app/vendor/bundle/ruby/2.4.0/gems/puma-3.12.0/ext/puma_http11
+make "DESTDIR=" clean
+
+current directory: /Users/sugitamasatoshi/sample_app/vendor/bundle/ruby/2.4.0/gems/puma-3.12.0/ext/puma_http11
+make "DESTDIR="
+compiling http11_parser.c
+compiling io_buffer.c
+compiling mini_ssl.c
+compiling puma_http11.c
+linking shared-object puma/puma_http11.bundle
+
+current directory: /Users/sugitamasatoshi/sample_app/vendor/bundle/ruby/2.4.0/gems/puma-3.12.0/ext/puma_http11
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 puma_http11.bundle ./.gem.20181118-10048-y7a40i/puma
